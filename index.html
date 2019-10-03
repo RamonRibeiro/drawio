@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.png" type="image">
+    <title>Sistema ERP</title>
+    
+    <style>
+    #texto{
+    animation-name: mov;
+    animation-duration: 1s;
+	background: white;
+	margin:50px;
+	margin-top: 120px;
+	padding: 15px;
+	border:thin solid;
+	border-color: white;
+	border-radius: 10px;
+	box-shadow: 0px 0px 1em #666;
+	 }
+	 
+	 #p1{
+	text-indent: 50px;
+	color:black; 
+	font-size:25pt;
+	text-align: justify;
+	 }
+	 #p2{
+	text-indent: 50px;
+	color:black; 
+	font-size:25pt;
+	text-align: justify;
+     }
+
+     @keyframes mov{
+    from{
+        opacity: 0;
+        transform:translateX(-50%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+        /*Responsivo*/
+
+     @media only screen and (max-width: 768px){
+        #texto{
+	    background: white;
+        margin:auto;
+        margin-top: 60px;
+    	margin-bottom: 10px;
+    	width: auto;
+    	height: auto;
+	    padding: 15px;
+    	border:thin solid;
+	    border-color: white;
+    	border-radius: 10px;
+    	box-shadow: 0px 0px 1em #666;
+	 }
+
+	 #p1{
+    	text-indent: 0px;
+    	color:black; 
+    	font-size:25pt;
+    	text-align:center;
+	 }
+	 #p2{
+    	text-indent: 0px;
+    	color:black; 
+	    font-size:25pt;
+    	text-align: center;
+	 }
+     }
+    
+    </style>
+
+</head>
+<body>
+        <!--Menu-->
+    <header>
+        <input type="checkbox" id="btn-menu"> 
+        <label for="btn-menu">&#9776;  </label> 
+                <nav class="menu">
+                    <ul>
+                        <li id="selecionado"> <a href="index.html"> <img src="iconhome.png" title="Inicio" > </a> </li> 
+        
+                            <li><a href="cadastro.html"><img src="iconmercadorias.png" title="Mercadorias"></a></li>
+        
+                            <li><a href="cadastro.html"><img src="iconlogin.png" title="Login"></a></li>
+        
+                    
+                        <li><a href="contato.html"><img src="iconcontato.png" title="Contato"></a></li>
+                    </ul>
+                </nav>
+        </header>
+        <br>
+        
+        <!--Texto!-->
+<div id="texto">
+
+    <h1>Sistema ERP</h1>
+<p id="p1"> <strong> Planejamento de Recursos Empresariais </strong> ou planejamento de recursos corporativos é um sistema de informação que integra todos os dados e processos de uma organização em um único sistema. A integração pode ser vista sob a perspectiva funcional e sob a perspectiva sistêmica. </p>
+
+    <h1> Importancia </h1>
+<p id="p2">Ter um bom sistema <strong>ERP</strong> significa relatórios com informações precisas, redução de tempo e custos, automatização de tarefas manuais e outras vantagens.</p>
+
+</body>
+</html>
